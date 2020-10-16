@@ -1,0 +1,262 @@
+   
+
+/*
+  
+                       _       ______ _          _   
+     /\               ( )     |  ____(_)        | |  
+    /  \   _ __  _   _|/ ___  | |__   _ _ __ ___| |_ 
+   / /\ \ | '_ \| | | | / __| |  __| | | '__/ __| __|
+  / ____ \| | | | |_| | \__ \ | |    | | |  \__ \ |_ 
+ /_/    \_\_| |_|\__,_| |___/ |_|    |_|_|  |___/\__|
+   
+   _____  _____ _____    _____ ____  _____  ______   
+  / ____|/ ____/ ____|  / ____/ __ \|  __ \|  ____|  
+ | |    | (___| (___   | |   | |  | | |  | | |__     
+ | |     \___ \\___ \  | |   | |  | | |  | |  __|    
+ | |____ ____) |___) | | |___| |__| | |__| | |____   
+  \_____|_____/_____/   \_____\____/|_____/|______|  
+
+    ______      _       ______ _ _      
+   |  ____|    | |     |  ____(_) |     
+   | |__  __  _| |_    | |__   _| | ___ 
+   |  __| \ \/ / __|   |  __| | | |/ _ \
+   | |____ >  <| |_ _  | |    | | |  __/
+   |______/_/\_\\__(_) |_|    |_|_|\___|
+*/
+
+/* Font and typography css on page in body*/
+body{
+  font-family: 'PT Serif', serif;
+  font-size: 16px;   
+  background-color: #555;     
+  margin: 0;
+  line-height: 1.3em;
+}
+
+/* CSS for div containing the webpage elements*/
+#wrapper{
+  max-width: 960px; 
+  margin: 0 auto; 
+  background-color: #889;    
+}
+
+/*-----------------------------Header element CSS------------------------------*/
+header{
+  height: 145px;
+  background-color: #ccf;
+}
+
+#logo{
+  float: left;
+  padding: 5px 1px 0 1px;
+}
+
+#name{
+  clear: both;
+  padding: 5px 1px 0 0;
+}
+
+#headcontent{
+  float: right;
+  display: inline-block;
+  padding-top: 18px;   
+  padding-right: 19px;
+}
+
+#headcontent input[type="text"]{
+  width: 100px;
+  background-color: #eed;        
+  border: 2px solid #999;
+  padding: 4px 5px 4px 5px;
+}
+
+#headcontent a{
+  text-decoration: none;   
+  color: #33f; 
+  display: inline-block;
+  background-color: #c8c;
+  padding: 3px 0;
+  width: 80px;
+  text-align: center;
+}
+
+#headcontent a:hover{
+  background-color: #ddd; 
+}
+/*-----------------------------End of Header element CSS------------------------------*/
+
+
+/*-----------------------------Nav element CSS----------------------------------------*/
+nav{
+  width: 30%;
+  float: left;
+  margin:0;
+  padding-top: 0;
+  box-sizing: border-box;  
+}
+
+nav ul#navmenu{
+  margin: 0;
+  padding-left: 0;  
+}
+
+nav ul#navmenu li{
+  list-style-type: none;
+  display: block;
+  box-sizing: border-box;  
+}
+
+nav ul#navmenu li a{
+  display: block;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  background-color: #868;
+  color: #fff;
+  border: 1px solid #ccc;
+  text-align: center;  
+}
+
+nav ul#navmenu li a:hover{
+  background-color: #99a;
+}
+
+nav ul#navmenu li#joinus a{
+  background-color: #99a;
+}
+/*-----------------------------End of Nav element CSS----------------------------*/
+
+
+
+/*-----------------------------Section element CSS-------------------------------*/
+section{
+  background-color: #a9a;
+  min-height: 650px;        
+  padding: 1px 20px 1px 20px;        
+  float: left;
+  width: 70%; 
+  box-sizing: border-box;    
+}
+
+section #heading{
+  text-align: center;
+  color: #535;
+  font-weight: 700; 
+  margin-bottom: 0;
+}
+ 
+#regform fieldset{
+  background-color: #ccf;  
+  border: 1px solid #333;
+  margin-top: 10px;
+}
+
+#regform fieldset#personalinfo{
+  margin-top: 5px;
+}
+
+#regform legend{  
+  background-color: #889;
+  color: #fff;
+  padding: 8px;
+  border: 1px solid #333;
+  width: 100px;  
+}
+
+#regform label.info{
+  display: block;
+  width: 160px;
+  clear: both;
+  float: left;  
+}
+
+#regform input[type="text"], 
+#regform input[type="tel"], 
+#regform input[type="number"], 
+#regform input[type="email"], 
+#regform input[type="password"]{
+        width: 250px;
+        background-color: #eed;        
+        border: 2px solid #999;
+        padding: 6px;
+}
+
+#regform select#zone{
+  width: 263px;
+  background-color: #eed;        
+  border: 2px solid #999;
+  padding: 6px;
+}
+
+#occupation_status{
+  float: left;
+  display: inline-flex;  
+  box-sizing: border-box;
+}
+
+#marital_status{
+  float: left;
+  display: inline-flex; 
+  box-sizing: border-box;
+}
+
+#subscribe{
+  height: 16px;
+  width: 16px;
+}
+
+#sent{
+  text-align: center;  
+}
+
+input[type="submit"], input[type="reset"]{
+  padding: 10px;
+  display: inline-block;
+  width: 100px;
+  background-color: #ccf;
+  color: #33f;
+  border: 1px solid #eee;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+  background-color: #999;  
+}
+
+/*-----------------------------End of Section element CSS-------------------------------*/
+
+
+
+/*-----------------------------Footer element CSS---------------------------------------*/
+footer{
+  height: 150px;
+  background-color: #444;
+  color: #fff;
+  padding: 1px 9px;
+  clear: both; 
+  text-align: center;
+}   
+
+footer ul#footmenu{
+  margin-top: 40px;
+  text-align: center;
+  vertical-align: bottom;  
+}
+
+footer ul#footmenu li{
+  display: inline-block;  
+}
+
+footer ul#footmenu li a{
+  text-decoration: none;
+  background-color: #ccf; 
+  color: #33f;
+  padding: 12px 20px 12px 20px;
+  display: block;
+  width: 100px;
+  border: 1px solid #fff;
+}
+
+footer ul#footmenu li a:hover{
+  background-color: #999;
+}
+
+/*-----------------------------End of Footer element CSS-------------------------------*/

@@ -1,0 +1,329 @@
+<!doctype html>
+
+
+<html lang="en">
+  <head>
+    <title>Bengaluru_Kulshrestha_Registration</title>
+    <meta charset="utf-8" />
+    <!--
+
+    ////////////////////////////////////////////////
+    //                                            //
+    //    Program Name: Web Development           //
+    //     Course Name: Intermediate HTML5/CSS    //
+    //           Batch: WDD7 - Jan 2020           //
+    //      Instructor: Brent Scott               //
+    //            Final Project                   // 
+    //                                            //
+    //    Submitted by: Anu Kulshrestha           //
+    //                                            //
+    ////////////////////////////////////////////////
+
+    -->
+    <!--Google font linked to the webpage-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet"> 
+    
+    <!-- External CSS used for the webpage -->  
+    <link rel="stylesheet" 
+          href="BengaluruKulstyles.css" 
+          type="text/css" 
+          media="screen"/>    
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- The container of the webpage  -->
+    <div id="wrapper"> 
+     
+    <!-- The header element of the webpage  -->
+    <header>
+      <!-- The div created for header images of the webpage  -->
+      <div>
+        <img id="logo" alt="logo" src="main_logo.png" />
+        <img id="name" alt="name" src="services.png" />
+      </div>   
+      
+      <!-- The div created for login and search -->
+      <div id="headcontent">
+        <input type="text" 
+               name="search"
+               id="search"                
+               placeholder="Search Here"/>
+        <a href="#">Search</a>      
+        <a href="#">Login</a> 
+      </div>
+    </header>
+      
+    <!-- The navigation element for navigation menu list -->
+    <nav>
+      <ul id="navmenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>          
+        <li id="joinus"><a href="#">Join Us</a></li>          
+      </ul>  
+    </nav>
+      
+    <!-- The section element for main content -->
+    <section>
+      <!-- Registration form -->
+      <h1 id="heading">Registration Form</h1>
+      <form id="regform"
+           method="post"
+           action="http://www.scott-media.com/test/form_display.php" 
+           autocomplete="on"> 
+        
+        <!-- hidden elements for sending values by default -->
+        <input type="hidden" name="city" value="Bengaluru" />
+        <input type="hidden" name="state" value="Karnataka" />
+        <input type="hidden" name="country" value="India" />      
+        
+          <!-- 1st part of the form for personal details -->
+          <fieldset id="personalinfo">
+            <legend>Personal Info</legend>
+            
+            <!-- Person's First Name -->
+            <p>
+              <label class="info" for="first_name">First Name:</label> 
+              <input type="text" 
+                     name="first_name"
+                     id="first_name" 
+                     maxlength="40" 
+                     size="20"
+                     required="required"
+                     placeholder="Type your First Name"/> 
+            </p>
+            
+            <!-- Person's Middle name (optional) -->
+            <p>
+              <label class="info" for="mid_name">Middle Name:</label> 
+              <input type="text" 
+                     name="mid_name"
+                     id="mid_name" 
+                     maxlength="40"
+                     size="20"                     
+                     placeholder="Type your Middle Name"/>
+            </p>
+           
+            <!-- Person's Last Name -->
+            <p>
+              <label class="info" for="last_name">Last Name:</label> 
+              <input type="text" 
+                     name="last_name"
+                     id="last_name" 
+                     maxlength="40"
+                     size="20"
+                     required="required"
+                     placeholder="Type your Last Name"/>
+            </p>
+            
+            <!-- Person's building and street address -->
+            <p>
+              <label class="info" for="address">Address</label> 
+                <textarea name="address" 
+                          id="address" 
+                          cols="34"
+                          rows="3" title="put your bangalore address here"></textarea>          
+            </p>
+            
+            <!-- Person's Mobile number -->
+            <p>
+              <label class="info" for="phone">Contact Number (M):</label>
+              <input type="tel"
+                     name="phone"
+                     id="phone" 
+                     required="required"
+                     placeholder="Type your phone no."/>
+            </p>
+            
+            <!-- Person's Age -->
+            <p> 
+              <label class="info" for="age">Age:</label>
+              <input type="number"
+                     name="age"
+                     id="age"
+                     required="required"
+                     placeholder="Type your age"/>
+            </p> 
+            
+            <!-- Person's Family Members in numbers -->
+            <p> 
+              <label class="info" for="familyMembers">Family Members:</label>
+              <input type="number"
+                     name="familyMembers"
+                     id="familyMembers"
+                     required="required"
+                     placeholder="In numbers"/>
+            </p> 
+            
+            <!-- Person's Marital status -->
+            <p id="marital_status">     
+              <label class="info" for="unmarried">Marital Status:</label>                        
+              <input type="radio"
+                     id="unmarried"
+                     name="maritalstatus"
+                     value="unmarried" />
+              <label for="unmarried">Unmarried</label><br />
+              <input type="radio"
+                     id="married"
+                     name="maritalstatus"
+                     value="married" />
+              <label for="married">Married</label><br />
+              <input type="radio"
+                     id="divorced"
+                     name="maritalstatus"
+                     value="divorced" />
+              <label for="divorced">Divorced</label><br />
+               <input type="radio"
+                     id="widow"
+                     name="maritalstatus"
+                     value="widow" />
+              <label for="widow">Widow</label><br />
+               <input type="radio"
+                     id="widower"
+                     name="maritalstatus"
+                     value="widower" />
+              <label for="widower">Widower</label><br />                 
+            </p>
+            
+            <!-- Person's Kids in numbers (if any)-->
+            <p> 
+              <label class="info" for="kids">No. of Kids:</label>
+              <input type="number"
+                     name="kids"
+                     id="kids"
+                     required="required"
+                     placeholder="In numbers"/>
+            </p> 
+            
+            <!-- Person's Occupation in Bangalore -->
+            <p id="occupation_status">     
+              <label class="info" for="student">Occupation:</label>                        
+              <input type="radio"
+                     id="student"
+                     name="occupation"
+                     value="student" />
+              <label for="student">Student</label><br />
+              <input type="radio"
+                     id="service"
+                     name="occupation"
+                     value="service" />
+              <label for="service">Service</label><br />
+              <input type="radio"
+                     id="retired"
+                     name="occupation"
+                     value="retired" />
+              <label for="retired">Retired</label><br />
+               <input type="radio"
+                     id="housewife"
+                     name="occupation"
+                     value="housewife" />
+              <label for="housewife">Housewife</label><br />
+               <input type="radio"
+                     id="self_employed"
+                     name="occupation"
+                     value="self_employed" />
+              <label for="self_employed">Self Employed</label><br />                 
+            </p>     
+            
+            <!-- Select zone to help with dividing into sub-regions -->
+            <p> 
+              <label class="info" for="zone">Zone:</label>
+              <select id="zone" name="zone">
+                <option value="no zone selected">Please Select Your Zone:</option>            
+                <option value="north">Bangalore North</option>
+                <option value="south">Bangalore South</option>
+                <option value="east">Bangalore East</option>
+                <option value="west">Bangalore West</option>
+                <option value="central">Bangalore Central</option>          
+              </select>
+            </p>        
+            
+            <!-- Any extra information to share with admin -->
+            <p> 
+              <label class="info" for="addinfo" >Additional Info:</label> 
+              <textarea name="addinfo" 
+                        id="addinfo" 
+                        cols="34"
+                        rows="3"></textarea>          
+            </p>        
+          </fieldset> <!-- End of 1st part of the form for personal details -->
+         
+          <!-- 2nd part of the form for login registration -->
+          <fieldset>        
+            <legend>Login Details</legend>
+
+            <!-- Person's email id to use for userid as well -->
+            <p>
+              <label class="info" for="email_address">Email Id (User ID):</label>
+              <input type="email" 
+                     name="email_address"
+                     id="email_address"
+                     required="required"
+                     placeholder="Type your email id"/> 
+            </p>
+            
+            <!-- Create one password -->
+            <p>
+              <label class="info" for="createpassword">Create Password:</label>
+              <input type="password"
+                     name="createpassword"
+                     id="createpassword" 
+                     maxlength="16"
+                     minlength="8"
+                     size="30"
+                     required="required"
+                     placeholder="between 8 and 16 characters"/> 
+            </p>
+            
+            <!-- Confirm created password -->
+            <p>
+              <label class="info" for="confirmpassword">Confirm Password:</label>
+              <input type="password"
+                     name="confirmpassword"
+                     id="confirmpassword" 
+                     maxlength="16"
+                     minlength="8"
+                     size="30"
+                     required="required"
+                     placeholder="between 8 and 16 characters"/> 
+            </p>
+            
+            <p> <!-- user's subscription in receiving newsletter -->
+              <input type="checkbox" name="subscribe" id="subscribe" value="yes"/>
+              <label for="subscribe">Subscribe to Monthly Newsletter?</label>
+            </p>            
+          
+          </fieldset> <!-- End of 2nd part of the form for login registration -->
+          
+          <!-- Action buttons -->
+          <p id="sent">
+            <input type="submit" 
+                   id="subreg" 
+                   value="Register"/> &nbsp; <!-- Click to submit for registration -->
+            <input type="reset"
+                    value="Clear Form"/> <!-- Click to clear the form -->       
+          </p>      
+        </form>
+      </section>
+      
+      <!-- Footer element of the webpage for footer menu and copyright details -->
+      <footer>
+        <ul id="footmenu">          
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact Us</a></li>          
+          <li><a href="#">Join Us</a></li>          
+        </ul>
+        <p>© 2020 MBS Services Inc. All rights reserved.</p>
+      </footer>
+      
+    </div>
+  </body>
+</html>
